@@ -191,14 +191,10 @@ extension CountriesViewController: UISearchResultsUpdating {
 class CountryTableViewCell: UITableViewCell {
     
     // MARK: - UI Elements
-    private let boxView = UIView()
+    private let containerView = UIView()
     private let nameRegionLabel = UILabel()
     private let codeLabel = UILabel()
     private let capitalLabel = UILabel()
-    private let topBorder = CAShapeLayer()
-    private let bottomBorder = CAShapeLayer()
-    private let leftBorder = CAShapeLayer()
-    private let rightBorder = CAShapeLayer()
     
     // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -210,25 +206,19 @@ class CountryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setupBorders()
-    }
-    
     // MARK: - UI Setup
     private func setupUI() {
-        selectionStyle = .none
-        backgroundColor = .clear
-        contentView.backgroundColor = .clear
+        selectionStyle = .default
+        backgroundColor = .systemBackground
         
-        // Box container setup
-        contentView.addSubview(boxView)
-        boxView.translatesAutoresizingMaskIntoConstraints = false
+        // Container setup
+        contentView.addSubview(containerView)
+        containerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            boxView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
-            boxView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            boxView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            boxView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
+            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
         ])
         
         // Labels setup
@@ -241,10 +231,10 @@ class CountryTableViewCell: UITableViewCell {
         capitalLabel.numberOfLines = 0
         capitalLabel.font = .systemFont(ofSize: 16)
         
-        // Add labels to box
-        boxView.addSubview(nameRegionLabel)
-        boxView.addSubview(codeLabel)
-        boxView.addSubview(capitalLabel)
+        // Add labels to container
+        containerView.addSubview(nameRegionLabel)
+        containerView.addSubview(codeLabel)
+        containerView.addSubview(capitalLabel)
         
         // Layout constraints
         nameRegionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -252,42 +242,19 @@ class CountryTableViewCell: UITableViewCell {
         capitalLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            nameRegionLabel.topAnchor.constraint(equalTo: boxView.topAnchor, constant: 12),
-            nameRegionLabel.leadingAnchor.constraint(equalTo: boxView.leadingAnchor, constant: 12),
+            nameRegionLabel.topAnchor.constraint(equalTo: containerView.topAnchor),
+            nameRegionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
             nameRegionLabel.trailingAnchor.constraint(equalTo: codeLabel.leadingAnchor, constant: -8),
             
-            codeLabel.topAnchor.constraint(equalTo: boxView.topAnchor, constant: 12),
-            codeLabel.trailingAnchor.constraint(equalTo: boxView.trailingAnchor, constant: -12),
+            codeLabel.topAnchor.constraint(equalTo: containerView.topAnchor),
+            codeLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
             codeLabel.widthAnchor.constraint(equalToConstant: 50),
             
-            capitalLabel.topAnchor.constraint(equalTo: nameRegionLabel.bottomAnchor, constant: 12),
-            capitalLabel.leadingAnchor.constraint(equalTo: boxView.leadingAnchor, constant: 12),
-            capitalLabel.trailingAnchor.constraint(equalTo: boxView.trailingAnchor, constant: -12),
-            capitalLabel.bottomAnchor.constraint(equalTo: boxView.bottomAnchor, constant: -12)
+            capitalLabel.topAnchor.constraint(equalTo: nameRegionLabel.bottomAnchor, constant: 8),
+            capitalLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+            capitalLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
+            capitalLabel.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
-    }
-    
-    private func setupBorders() {
-        // Remove existing borders
-        boxView.layer.sublayers?.removeAll(where: { $0 is CAShapeLayer })
-        
-        // Create path for dashed borders
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: boxView.bounds.width, y: 0))
-        path.addLine(to: CGPoint(x: boxView.bounds.width, y: boxView.bounds.height))
-        path.addLine(to: CGPoint(x: 0, y: boxView.bounds.height))
-        path.close()
-        
-        // Create dashed border layer
-        let borderLayer = CAShapeLayer()
-        borderLayer.path = path.cgPath
-        borderLayer.strokeColor = UIColor.gray.cgColor
-        borderLayer.fillColor = UIColor.clear.cgColor
-        borderLayer.lineWidth = 1
-        borderLayer.lineDashPattern = [4, 4]
-        
-        boxView.layer.addSublayer(borderLayer)
     }
     
     func configure(with country: Country) {
