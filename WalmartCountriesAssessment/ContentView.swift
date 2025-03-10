@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     var body: some View {
@@ -14,11 +15,14 @@ struct ContentView: View {
 }
 
 struct CountriesViewControllerRepresentable: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> CountriesViewController {
-        return CountriesViewController()
+    func makeUIViewController(context: Context) -> UINavigationController {
+        let countriesVC = CountriesViewController()
+        let navigationController = UINavigationController(rootViewController: countriesVC)
+        return navigationController
     }
     
-    func updateUIViewController(_ uiViewController: CountriesViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+        // No updates needed
     }
 }
 
