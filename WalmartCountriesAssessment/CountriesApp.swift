@@ -191,11 +191,14 @@ extension CountriesViewController: UISearchResultsUpdating {
 class CountryTableViewCell: UITableViewCell {
     
     // MARK: - UI Elements
-    private let containerView = UIView()
-    private let nameLabel = UILabel()
-    private let regionLabel = UILabel()
+    private let boxView = UIView()
+    private let nameRegionLabel = UILabel()
     private let codeLabel = UILabel()
     private let capitalLabel = UILabel()
+    private let topBorder = CAShapeLayer()
+    private let bottomBorder = CAShapeLayer()
+    private let leftBorder = CAShapeLayer()
+    private let rightBorder = CAShapeLayer()
     
     // MARK: - Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -207,53 +210,90 @@ class CountryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupBorders()
+    }
+    
     // MARK: - UI Setup
     private func setupUI() {
-        selectionStyle = .default
-        accessoryType = .disclosureIndicator
+        selectionStyle = .none
+        backgroundColor = .clear
+        contentView.backgroundColor = .clear
         
-        contentView.addSubview(containerView)
-        containerView.translatesAutoresizingMaskIntoConstraints = false
+        // Box container setup
+        contentView.addSubview(boxView)
+        boxView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+            boxView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            boxView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            boxView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
+            boxView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16)
         ])
         
-        nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
-        nameLabel.numberOfLines = 0
+        // Labels setup
+        nameRegionLabel.numberOfLines = 0
+        nameRegionLabel.font = .systemFont(ofSize: 16)
         
-        regionLabel.font = UIFont.systemFont(ofSize: 14)
-        regionLabel.textColor = .secondaryLabel
+        codeLabel.font = .systemFont(ofSize: 16)
+        codeLabel.textAlignment = .right
         
-        codeLabel.font = UIFont.systemFont(ofSize: 14)
-        codeLabel.textColor = .secondaryLabel
+        capitalLabel.numberOfLines = 0
+        capitalLabel.font = .systemFont(ofSize: 16)
         
-        capitalLabel.font = UIFont.systemFont(ofSize: 14)
-        capitalLabel.textColor = .secondaryLabel
+        // Add labels to box
+        boxView.addSubview(nameRegionLabel)
+        boxView.addSubview(codeLabel)
+        boxView.addSubview(capitalLabel)
         
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, regionLabel, codeLabel, capitalLabel])
-        stackView.axis = .vertical
-        stackView.spacing = 4
-        stackView.alignment = .leading
+        // Layout constraints
+        nameRegionLabel.translatesAutoresizingMaskIntoConstraints = false
+        codeLabel.translatesAutoresizingMaskIntoConstraints = false
+        capitalLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        containerView.addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: containerView.topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
+            nameRegionLabel.topAnchor.constraint(equalTo: boxView.topAnchor, constant: 12),
+            nameRegionLabel.leadingAnchor.constraint(equalTo: boxView.leadingAnchor, constant: 12),
+            nameRegionLabel.trailingAnchor.constraint(equalTo: codeLabel.leadingAnchor, constant: -8),
+            
+            codeLabel.topAnchor.constraint(equalTo: boxView.topAnchor, constant: 12),
+            codeLabel.trailingAnchor.constraint(equalTo: boxView.trailingAnchor, constant: -12),
+            codeLabel.widthAnchor.constraint(equalToConstant: 50),
+            
+            capitalLabel.topAnchor.constraint(equalTo: nameRegionLabel.bottomAnchor, constant: 12),
+            capitalLabel.leadingAnchor.constraint(equalTo: boxView.leadingAnchor, constant: 12),
+            capitalLabel.trailingAnchor.constraint(equalTo: boxView.trailingAnchor, constant: -12),
+            capitalLabel.bottomAnchor.constraint(equalTo: boxView.bottomAnchor, constant: -12)
         ])
     }
     
-    // MARK: - Configuration
+    private func setupBorders() {
+        // Remove existing borders
+        boxView.layer.sublayers?.removeAll(where: { $0 is CAShapeLayer })
+        
+        // Create path for dashed borders
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: boxView.bounds.width, y: 0))
+        path.addLine(to: CGPoint(x: boxView.bounds.width, y: boxView.bounds.height))
+        path.addLine(to: CGPoint(x: 0, y: boxView.bounds.height))
+        path.close()
+        
+        // Create dashed border layer
+        let borderLayer = CAShapeLayer()
+        borderLayer.path = path.cgPath
+        borderLayer.strokeColor = UIColor.gray.cgColor
+        borderLayer.fillColor = UIColor.clear.cgColor
+        borderLayer.lineWidth = 1
+        borderLayer.lineDashPattern = [4, 4]
+        
+        boxView.layer.addSublayer(borderLayer)
+    }
+    
     func configure(with country: Country) {
-        nameLabel.text = country.name
-        regionLabel.text = "Region: \(country.region)"
-        codeLabel.text = "Code: \(country.code)"
-        capitalLabel.text = "Capital: \(country.capital)"
+        nameRegionLabel.text = "\(country.name), \(country.region)"
+        codeLabel.text = country.code
+        capitalLabel.text = country.capital
     }
 }
 
