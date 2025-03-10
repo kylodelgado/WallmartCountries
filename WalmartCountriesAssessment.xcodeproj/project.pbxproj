@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CAEFA5D62D7F7D240012B1BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAEFA5BD2D7F7D220012B1BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAEFA5C42D7F7D220012B1BA;
+			remoteInfo = WalmartCountriesAssessment;
+		};
+		CAEFA5E02D7F7D240012B1BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAEFA5BD2D7F7D220012B1BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAEFA5C42D7F7D220012B1BA;
+			remoteInfo = WalmartCountriesAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAEFA5C52D7F7D220012B1BA /* WalmartCountriesAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartCountriesAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAEFA5D52D7F7D240012B1BA /* WalmartCountriesAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalmartCountriesAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAEFA5DF2D7F7D240012B1BA /* WalmartCountriesAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalmartCountriesAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CAEFA5C72D7F7D220012B1BA /* WalmartCountriesAssessment */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WalmartCountriesAssessment;
+			sourceTree = "<group>";
+		};
+		CAEFA5D82D7F7D240012B1BA /* WalmartCountriesAssessmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WalmartCountriesAssessmentTests;
+			sourceTree = "<group>";
+		};
+		CAEFA5E22D7F7D240012B1BA /* WalmartCountriesAssessmentUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WalmartCountriesAssessmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAEFA5C22D7F7D220012B1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5D22D7F7D240012B1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5DC2D7F7D240012B1BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAEFA5BC2D7F7D220012B1BA = {
+			isa = PBXGroup;
+			children = (
+				CAEFA5C72D7F7D220012B1BA /* WalmartCountriesAssessment */,
+				CAEFA5D82D7F7D240012B1BA /* WalmartCountriesAssessmentTests */,
+				CAEFA5E22D7F7D240012B1BA /* WalmartCountriesAssessmentUITests */,
+				CAEFA5C62D7F7D220012B1BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAEFA5C62D7F7D220012B1BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAEFA5C52D7F7D220012B1BA /* WalmartCountriesAssessment.app */,
+				CAEFA5D52D7F7D240012B1BA /* WalmartCountriesAssessmentTests.xctest */,
+				CAEFA5DF2D7F7D240012B1BA /* WalmartCountriesAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAEFA5C42D7F7D220012B1BA /* WalmartCountriesAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAEFA5E92D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessment" */;
+			buildPhases = (
+				CAEFA5C12D7F7D220012B1BA /* Sources */,
+				CAEFA5C22D7F7D220012B1BA /* Frameworks */,
+				CAEFA5C32D7F7D220012B1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CAEFA5C72D7F7D220012B1BA /* WalmartCountriesAssessment */,
+			);
+			name = WalmartCountriesAssessment;
+			packageProductDependencies = (
+			);
+			productName = WalmartCountriesAssessment;
+			productReference = CAEFA5C52D7F7D220012B1BA /* WalmartCountriesAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAEFA5D42D7F7D240012B1BA /* WalmartCountriesAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAEFA5EC2D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessmentTests" */;
+			buildPhases = (
+				CAEFA5D12D7F7D240012B1BA /* Sources */,
+				CAEFA5D22D7F7D240012B1BA /* Frameworks */,
+				CAEFA5D32D7F7D240012B1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAEFA5D72D7F7D240012B1BA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CAEFA5D82D7F7D240012B1BA /* WalmartCountriesAssessmentTests */,
+			);
+			name = WalmartCountriesAssessmentTests;
+			packageProductDependencies = (
+			);
+			productName = WalmartCountriesAssessmentTests;
+			productReference = CAEFA5D52D7F7D240012B1BA /* WalmartCountriesAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAEFA5DE2D7F7D240012B1BA /* WalmartCountriesAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAEFA5EF2D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessmentUITests" */;
+			buildPhases = (
+				CAEFA5DB2D7F7D240012B1BA /* Sources */,
+				CAEFA5DC2D7F7D240012B1BA /* Frameworks */,
+				CAEFA5DD2D7F7D240012B1BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAEFA5E12D7F7D240012B1BA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CAEFA5E22D7F7D240012B1BA /* WalmartCountriesAssessmentUITests */,
+			);
+			name = WalmartCountriesAssessmentUITests;
+			packageProductDependencies = (
+			);
+			productName = WalmartCountriesAssessmentUITests;
+			productReference = CAEFA5DF2D7F7D240012B1BA /* WalmartCountriesAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAEFA5BD2D7F7D220012B1BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CAEFA5C42D7F7D220012B1BA = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CAEFA5D42D7F7D240012B1BA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CAEFA5C42D7F7D220012B1BA;
+					};
+					CAEFA5DE2D7F7D240012B1BA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CAEFA5C42D7F7D220012B1BA;
+					};
+				};
+			};
+			buildConfigurationList = CAEFA5C02D7F7D220012B1BA /* Build configuration list for PBXProject "WalmartCountriesAssessment" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAEFA5BC2D7F7D220012B1BA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CAEFA5C62D7F7D220012B1BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAEFA5C42D7F7D220012B1BA /* WalmartCountriesAssessment */,
+				CAEFA5D42D7F7D240012B1BA /* WalmartCountriesAssessmentTests */,
+				CAEFA5DE2D7F7D240012B1BA /* WalmartCountriesAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAEFA5C32D7F7D220012B1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5D32D7F7D240012B1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5DD2D7F7D240012B1BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAEFA5C12D7F7D220012B1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5D12D7F7D240012B1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAEFA5DB2D7F7D240012B1BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAEFA5D72D7F7D240012B1BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAEFA5C42D7F7D220012B1BA /* WalmartCountriesAssessment */;
+			targetProxy = CAEFA5D62D7F7D240012B1BA /* PBXContainerItemProxy */;
+		};
+		CAEFA5E12D7F7D240012B1BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAEFA5C42D7F7D220012B1BA /* WalmartCountriesAssessment */;
+			targetProxy = CAEFA5E02D7F7D240012B1BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAEFA5E72D7F7D240012B1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAEFA5E82D7F7D240012B1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAEFA5EA2D7F7D240012B1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalmartCountriesAssessment/Preview Content\"";
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAEFA5EB2D7F7D240012B1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WalmartCountriesAssessment/Preview Content\"";
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAEFA5ED2D7F7D240012B1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalmartCountriesAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WalmartCountriesAssessment";
+			};
+			name = Debug;
+		};
+		CAEFA5EE2D7F7D240012B1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalmartCountriesAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WalmartCountriesAssessment";
+			};
+			name = Release;
+		};
+		CAEFA5F02D7F7D240012B1BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WalmartCountriesAssessment;
+			};
+			name = Debug;
+		};
+		CAEFA5F12D7F7D240012B1BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F3ESKKGUF8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYCH.WalmartCountriesAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WalmartCountriesAssessment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAEFA5C02D7F7D220012B1BA /* Build configuration list for PBXProject "WalmartCountriesAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAEFA5E72D7F7D240012B1BA /* Debug */,
+				CAEFA5E82D7F7D240012B1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEFA5E92D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAEFA5EA2D7F7D240012B1BA /* Debug */,
+				CAEFA5EB2D7F7D240012B1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEFA5EC2D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAEFA5ED2D7F7D240012B1BA /* Debug */,
+				CAEFA5EE2D7F7D240012B1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAEFA5EF2D7F7D240012B1BA /* Build configuration list for PBXNativeTarget "WalmartCountriesAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAEFA5F02D7F7D240012B1BA /* Debug */,
+				CAEFA5F12D7F7D240012B1BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAEFA5BD2D7F7D220012B1BA /* Project object */;
+}
