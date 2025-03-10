@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        CountriesViewControllerRepresentable()
+    }
+}
+
+struct CountriesViewControllerRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> CountriesViewController {
+        return CountriesViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: CountriesViewController, context: Context) {
     }
 }
 
